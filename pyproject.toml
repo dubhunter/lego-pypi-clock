@@ -1,0 +1,7 @@
+[project]
+name = "mr-pypi-clock"
+version = "1.0.0"
+description = "Lego Spike RPi Clock"
+requires-python = ">=3.11"
+dependencies = [
+]

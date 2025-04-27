@@ -1,0 +1,13 @@
+[Unit]
+Description=Mr. PyPi Clock
+After=multi-user.target
+
+[Service]
+Type=idle
+User=root
+ExecStart=/usr/bin/python3 -u /usr/local/apps/lego-pypi-clock/app.py
+StandardOutput=file:/var/log/lego-pypi-clock.log
+StandardError=inherit
+
+[Install]
+WantedBy=multi-user.target
